@@ -5,14 +5,14 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-const { adminAuth } = require('../middleware/adminAuth');
+const { adminAuth } = require('../middleware/AdminAuth');
 const {
   getProducts,
   getProduct,
   createProduct,
   updateProduct,
   deleteProduct,
-} = require('../controllers/productController');
+} = require('../controllers/ProductController');
 
 // ==================== MULTER CONFIG (for image upload) ====================
 

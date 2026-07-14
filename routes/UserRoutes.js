@@ -9,14 +9,14 @@ const {
   getUserStats,
   deactivateUser,
   activateUser,
-} = require('../controllers/userController');
+} = require('../controllers/UserController');
 const { protect, authorize } = require('../middleware/auth');
-const { uploadAvatar: uploadAvatarMiddleware } = require('../config/cloudinary');
-const { handleUploadError } = require('../middleware/upload');
+const { uploadAvatar: uploadAvatarMiddleware } = require('../config/Cloudinary');
+const { handleUploadError } = require('../middleware/Upload');
 const {
   validateObjectId,
   handleValidationErrors,
-} = require('../middleware/validateRequest');
+} = require('../middleware/ValidateRequest');
 
 // All routes require authentication and admin role
 router.use(protect);

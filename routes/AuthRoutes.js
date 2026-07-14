@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const {
   register, login, logout, getMe, updateProfile, changePassword, forgotPassword, resetPassword,
-} = require('../controllers/authController');
+} = require('../controllers/AuthController');
 
 // ✅ FIX: Import 'protect' instead of 'authenticateJWT'
 const { protect } = require('../middleware/auth'); 
 
 const {
   validateRegister, validateLogin, handleValidationErrors,
-} = require('../middleware/validateRequest');
+} = require('../middleware/ValidateRequest');
 
 // Public routes
 router.post('/register', validateRegister, handleValidationErrors, register);

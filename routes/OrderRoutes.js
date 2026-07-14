@@ -9,14 +9,14 @@ const {
   updateOrderToPaid,
   cancelOrder,
   getOrderStats,
-} = require('../controllers/orderController');
+} = require('../controllers/OrderController');
 const { protect, authorize } = require('../middleware/auth');
 const {
   validateCreateOrder,
   validateUpdateOrderStatus,
   validateObjectId,
   handleValidationErrors,
-} = require('../middleware/validateRequest');
+} = require('../middleware/ValidateRequest');
 
 // All routes require authentication
 router.use(protect);
