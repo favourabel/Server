@@ -1,5 +1,5 @@
 const { createTransporter } = require('../config/Email');
-const logger = require('./logger');
+const logger = require('./Logger');
 
 /**
  * Send email using nodemailer
