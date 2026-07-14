@@ -1,13 +1,13 @@
 const Order = require('../models/Order');
 const Product = require('../models/Product');
-const { successResponse, errorResponse } = require('../utils/apiResponse');
-const sendEmail = require('../utils/sendEmail');
+const { successResponse, errorResponse } = require('../utils/ApiResponse');
+const sendEmail = require('../utils/SendEmail');
 const {
   orderConfirmationEmail,
   orderShippedEmail,
   orderDeliveredEmail,
-} = require('../utils/emailTemplates');
-const logger = require('../utils/logger');
+} = require('../utils/EmailTemplates');
+const logger = require('../utils/Logger');
 
 // @desc    Create new order
 // @route   POST /api/orders

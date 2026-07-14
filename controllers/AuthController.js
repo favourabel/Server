@@ -1,9 +1,9 @@
 const User = require('../models/User');
-const { successResponse, errorResponse } = require('../utils/apiResponse');
-const { setTokenCookie, clearTokenCookie } = require('../utils/generateToken');
-const sendEmail = require('../utils/sendEmail');
-const { welcomeEmail, passwordResetEmail } = require('../utils/emailTemplates');
-const logger = require('../utils/logger');
+const { successResponse, errorResponse } = require('../utils/ApiResponse');
+const { setTokenCookie, clearTokenCookie } = require('../utils/GenerateToken');
+const sendEmail = require('../utils/SendEmail');
+const { welcomeEmail, passwordResetEmail } = require('../utils/EmailTemplates');
+const logger = require('../utils/Logger');
 const crypto = require('crypto');
 
 // @desc    Register new user

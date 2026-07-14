@@ -1,6 +1,6 @@
 const multer = require('multer');
 const path = require('path');
-const { errorResponse } = require('../utils/apiResponse');
+const { errorResponse } = require('../utils/ApiResponse');
 
 // Configure storage for local file system (fallback if not using Cloudinary)
 const localStorage = multer.diskStorage({

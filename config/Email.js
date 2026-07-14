@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const logger = require('../utils/logger');
+const logger = require('../utils/Logger');
 
 // Create reusable transporter
 const createTransporter = () => {

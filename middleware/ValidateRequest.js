@@ -1,5 +1,5 @@
 const { body, param, validationResult } = require('express-validator');
-const { errorResponse } = require('../utils/apiResponse');
+const { errorResponse } = require('../utils/ApiResponse');
 
 // Handle validation errors
 exports.handleValidationErrors = (req, res, next) => {

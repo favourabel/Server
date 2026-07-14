@@ -1,7 +1,7 @@
-const { errorResponse } = require('../utils/apiResponse');
-const logger = require('../utils/logger');
-
+const { errorResponse } = require('../utils/ApiResponse');
+const logger = require('../utils/Logger');
 // Not Found middleware
+
 exports.notFound = (req, res, next) => {
   res.status(404).json(
     errorResponse(`Route not found - ${req.originalUrl}`, null, 404)
