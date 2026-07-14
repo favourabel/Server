@@ -1,4 +1,4 @@
-const { createTransporter } = require('../config/email');
+const { createTransporter } = require('../config/Email');
 const logger = require('./logger');
 
 /**
